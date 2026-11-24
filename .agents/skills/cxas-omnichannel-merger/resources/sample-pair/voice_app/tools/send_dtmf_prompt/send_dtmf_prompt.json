@@ -1,0 +1,9 @@
+{
+  "name": "send_dtmf_prompt",
+  "displayName": "send_dtmf_prompt",
+  "pythonFunction": {
+    "name": "send_dtmf_prompt",
+    "pythonCode": "tools/send_dtmf_prompt/python_function/python_code.py",
+    "description": "Prompt caller to enter numeric input via phone keypad."
+  }
+}

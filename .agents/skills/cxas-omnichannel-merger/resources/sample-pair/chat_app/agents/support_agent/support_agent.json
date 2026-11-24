@@ -1,0 +1,10 @@
+{
+  "name": "support_agent",
+  "displayName": "support_agent",
+  "instruction": "agents/support_agent/instruction.txt",
+  "tools": [
+    "lookup_order",
+    "render_order_card",
+    "end_session"
+  ]
+}

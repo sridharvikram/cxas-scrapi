@@ -1,0 +1,16 @@
+{
+  "name": "support_agent",
+  "displayName": "support_agent",
+  "instruction": "agents/support_agent/instruction.txt",
+  "tools": [
+    "lookup_order",
+    "send_dtmf_prompt",
+    "end_session"
+  ],
+  "beforeAgentCallbacks": [
+    {
+      "pythonCode": "agents/support_agent/before_agent_callbacks/init_session/python_code.py",
+      "description": "Initialize caller session defaults once on Turn 1."
+    }
+  ]
+}

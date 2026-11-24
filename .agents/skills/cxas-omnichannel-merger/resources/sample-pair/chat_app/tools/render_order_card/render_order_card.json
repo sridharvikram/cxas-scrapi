@@ -1,0 +1,9 @@
+{
+  "name": "render_order_card",
+  "displayName": "render_order_card",
+  "pythonFunction": {
+    "name": "render_order_card",
+    "pythonCode": "tools/render_order_card/python_function/python_code.py",
+    "description": "Render a visual rich order card for chat/web sessions."
+  }
+}

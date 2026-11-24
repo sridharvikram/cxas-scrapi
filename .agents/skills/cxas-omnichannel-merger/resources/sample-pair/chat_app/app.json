@@ -1,0 +1,31 @@
+{
+  "name": "store-support-chat",
+  "displayName": "Store Support",
+  "rootAgent": "support_agent",
+  "globalInstruction": "global_instruction.txt",
+  "modelSettings": {
+    "model": "gemini-3-flash",
+    "temperature": 1.0
+  },
+  "timeZoneSettings": {
+    "timeZone": "America/New_York"
+  },
+  "variableDeclarations": [
+    {
+      "name": "order_id",
+      "description": "Most recently looked up order number.",
+      "schema": {
+        "type": "STRING",
+        "default": ""
+      }
+    },
+    {
+      "name": "tracking_url",
+      "description": "Web link shown in the chat order card.",
+      "schema": {
+        "type": "STRING",
+        "default": ""
+      }
+    }
+  ]
+}

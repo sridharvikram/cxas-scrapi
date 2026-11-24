@@ -1,0 +1,9 @@
+{
+  "name": "lookup_order",
+  "displayName": "lookup_order",
+  "pythonFunction": {
+    "name": "lookup_order",
+    "pythonCode": "tools/lookup_order/python_function/python_code.py",
+    "description": "Look up order details by order number."
+  }
+}

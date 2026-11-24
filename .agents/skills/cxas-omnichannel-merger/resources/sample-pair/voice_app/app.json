@@ -1,0 +1,50 @@
+{
+  "name": "store-support-voice",
+  "displayName": "Store Support",
+  "rootAgent": "support_agent",
+  "globalInstruction": "global_instruction.txt",
+  "modelSettings": {
+    "model": "gemini-composite-v2",
+    "temperature": 1.0
+  },
+  "audioProcessingConfig": {
+    "synthesizeSpeechConfigs": {
+      "en-US": {
+        "voice": "en-US-Chirp3-HD-Aoede",
+        "speakingRate": 1.0
+      }
+    },
+    "bargeInConfig": {
+      "bargeInAwareness": true
+    }
+  },
+  "timeZoneSettings": {
+    "timeZone": "America/New_York"
+  },
+  "variableDeclarations": [
+    {
+      "name": "_initialized",
+      "description": "One-time guard flag set in before_agent_callback.",
+      "schema": {
+        "type": "STRING",
+        "default": ""
+      }
+    },
+    {
+      "name": "order_id",
+      "description": "Most recently looked up order number.",
+      "schema": {
+        "type": "STRING",
+        "default": ""
+      }
+    },
+    {
+      "name": "caller_region",
+      "description": "Caller region code for support routing.",
+      "schema": {
+        "type": "STRING",
+        "default": "US"
+      }
+    }
+  ]
+}
